@@ -1,8 +1,11 @@
 // INGRESO VALIDO DEL USUARIO-----------------------------------------------------------------
 function valido(){
+    
     alert(" Ingreso Valido")
     botonIngresar.parentNode.removeChild(botonIngresar);
+    
 
+    acceso.parentNode.removeChild(acceso);
     const div = document.createElement("div")
     div.innerHTML = 
     "<center><h1> Bienvenido a la aplicacion</h1><button id=comenzar>COMENZAR</button></center>";
@@ -26,11 +29,11 @@ function tableroDeTareas(){
    
     botonAgregarAlumno.onclick = () => 
     agregar();
+}
 
 
 
-};
-//  METODO-> AGREGAR ALUMNO ------------------------------------------------------------------
+// //  METODO-> AGREGAR ALUMNO ------------------------------------------------------------------
 function agregar(){
     tablaIngresarAlumnoNuevo = document.createElement("center");
     tablaIngresarAlumnoNuevo.innerHTML = "<div class= conteiner><form ><input id= Nombre type=text placeholder=Nombre><input id= edad type=number placeholder=Edad><button id=boton type=reset>AGREGAR</button></form></div>";
